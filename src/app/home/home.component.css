@@ -1,0 +1,17 @@
+.home {
+    background-color: #1ABC9C;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.smaller {
+    width: 250px;
+}
+
+.line[_ngcontent-xrx-c6] {
+    height: 4px;
+    width: 80px;
+}

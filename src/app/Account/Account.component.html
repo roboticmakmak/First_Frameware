@@ -1,0 +1,30 @@
+<div class="header vh-100">
+    <h1 class="text-center my-5 bigmar ">CONTACT SECTION</h1>
+    <div _ngcontent-xrx-c6="" class="d-flex align-items-center justify-content-center mb-3">
+        <div _ngcontent-xrx-c6="" class="line me-3" style="background-color: rgb(0, 0, 0)"></div>
+        <i _ngcontent-xrx-c6="" class="fa-solid fa-star" style="color: rgb(0, 0, 0)"></i>
+        <div _ngcontent-xrx-c6="" class="line ms-3" style="background-color: rgb(0, 0, 0)"></div>
+    </div>
+    <div class="input-container">
+        <div class="input-wrapper">
+            <input type="text" placeholder="Username" id="username" (keydown)="moveLabelUp('username')" (keyup)="moveLabelDown('username')" />
+            <label class="colrGreen" for="username" [style.top.px]="usernameLabelTop">userName:</label>
+        </div>
+        <div class="input-wrapper">
+            <input type="text" placeholder="User Age" id="userage" (keydown)="moveLabelUp('userage')" (keyup)="moveLabelDown('userage')" />
+            <label class="colrGreen" for="userage" [style.top.px]="userageLabelTop">userAge:</label>
+        </div>
+        <div class="input-wrapper">
+            <input type="email" placeholder="User Email" id="useremail" (keydown)="moveLabelUp('useremail')" (keyup)="moveLabelDown('useremail')" />
+            <label class="colrGreen" for="useremail" [style.top.px]="useremailLabelTop">userEmail:</label>
+        </div>
+        <div class="input-wrapper">
+            <input type="password" placeholder="User Password" id="userpassword" (keydown)="moveLabelUp('userpassword')" (keyup)="moveLabelDown('userpassword')" />
+            <label class="colrGreen" for="userpassword" [style.top.px]="userpasswordLabelTop">userPassword:</label>
+        </div>
+        <div class="container w-50 mt-4 ">
+            <button class="buttonz">Send Message</button>
+        </div>
+
+    </div>
+</div>

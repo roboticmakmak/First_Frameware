@@ -1,0 +1,37 @@
+<div class="header vh-100">
+    <h1 class="text-center bigmar ">PORTIFOLIO COMPONENT</h1>
+    <div _ngcontent-xrx-c6="" class="d-flex align-items-center justify-content-center mb-3">
+        <div _ngcontent-xrx-c6="" class="line me-3" style="background-color: black"></div>
+        <i _ngcontent-xrx-c6="" class="fa-solid fa-star" style="color: black"></i>
+        <div _ngcontent-xrx-c6="" class="line ms-3" style="background-color: black"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let image of images.slice(0, 3)">
+                <div class="image-container">
+                    <img [src]="image" class="img-fluid rounded" [alt]="'Image ' + (images.indexOf(image) + 1)" (click)="showImageInCenter(image)" />
+                    <div class="overlay" (click)="showImageInCenter(image)">
+                        <div class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container my-5">
+                    <img [src]="image" class="img-fluid rounded" [alt]="'Image ' + (images.indexOf(image) + 1)" (click)="showImageInCenter(image)" />
+                    <div class="overlay" (click)="showImageInCenter(image)">
+                        <div class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full-screen-bg" [ngClass]="{'show': centeredImage}" (click)="centeredImage = null">
+                    <div class="modal-overlay" *ngIf="centeredImage"></div>
+                </div>
+
+                <div class="modal-content" *ngIf="centeredImage">
+                    <div class="centered-image">
+                        <img [src]="centeredImage" alt="Centered Image">
+                    </div>
+                </div>

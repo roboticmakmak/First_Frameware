@@ -1,0 +1,70 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.bigmar {
+    margin-top: 120px !important;
+}
+
+.line[_ngcontent-xrx-c6] {
+    height: 4px;
+    width: 80px;
+    color: black;
+}
+
+.input-wrapper input {
+    width: 900px;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttonz {
+    background-color: #1ABC9C;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+}
+
+.colrGreen {
+    color: #1ABC9C !important;
+}
+
+.input-wrapper label {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    padding: 5px;
+    color: #999;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+    z-index: -1;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper label {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    padding: 5px;
+    color: #999;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+}
+
+.input-wrapper label.active {
+    top: 0;
+}

@@ -1,0 +1,82 @@
+.line[_ngcontent-xrx-c6] {
+    height: 4px;
+    width: 80px;
+}
+
+.rounded-images img {
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #19AB8E;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.9;
+}
+
+.overlay:hover .plus {
+    opacity: 1;
+}
+
+.plus {
+    opacity: 0;
+    transition: opacity 0.9s ease;
+    color: white;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bigmar {
+    margin-top: 120px !important;
+}
+
+.full-screen-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(194, 219, 254, 0.8);
+    z-index: 99;
+    opacity: 0.7;
+    display: none;
+}
+
+.centered-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    max-width: 90%;
+    max-height: 90%;
+    fill-opacity: 100;
+}
+
+.full-screen-bg.show {
+    display: block;
+}

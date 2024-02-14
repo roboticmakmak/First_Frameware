@@ -1,0 +1,29 @@
+.bg-custom {
+    background-color: #2C3E50;
+}
+
+.nav-item {
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.navbar {
+    transition: height 0.9s ease;
+}
+
+.navbar-large {
+    height: 100px;
+    transition: height 0.9s ease;
+}
+
+.active-link {
+    background-color: #1ABC9C;
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-size: 35px;
+    font-weight: bold;
+}
